@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CRUDS</title>
+</head>
+<body lang="rel">
+
+    <div class="crud">
+        <div class="head">
+            <div id="Languages">
+                <button onclick="languagWep(this.id)" id="english">
+                    EN
+                </button>
+                <button onclick="languagWep(this.id)"  id="arabic">
+                    عربي
+                </button>
+            </div>
+            <h2>cruds</h2>
+            <p id="pElements">creare read update delete search</p>
+        </div>
+    
+        <div class="input">
+            <input placeholder="title" type="text" id="title">
+            <div class="price">
+                <input  onkeyup="getTotal()" placeholder="price" type="number" id="price" >
+                <input  onkeyup="getTotal()" placeholder="taxes" type="number" id="taxes">
+                <input onkeyup="getTotal()" placeholder="ads" type="number" id="ads">
+                <input  onkeyup="getTotal()" placeholder="discount" type="number" id="discount">
+                <small id="total"> </small>
+            </div>
+            <input placeholder="count" type="number" id="count">
+            <input placeholder="category" type="text" id="category">
+            <button  id="submit">Creale</button>
+        </div>
+    
+        <div class="outputs">
+            
+            <div class="searchBlock">
+                <input onkeyup="SearchData(value)" placeholder = "Search" type="text" id="search" >
+                <div class="btnsearch">
+                    <button  onclick="getSearch(this.id)" id="SearchTitle">Search By Title</button>
+                    <button onclick="getSearch(this.id)" id="SearchCategory">Search By category</button>
+                </div>
+            </div>
+            <div id="deleteAil">
+            </div>
+            <table>
+                <thead id="thead">
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>totle</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <!-- <div id="btn"><button">^</button></div> -->
+
+    <script src="js/main.js"></script>
+</body>
+</html>

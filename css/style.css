@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #222;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+#Languages{
+    display: flex;
+    position: relative;
+    top: 20px;
+}
+
+#Languages button{
+    width: 80px;
+    height: 35px;
+    border: 1px solid #111  ;
+}
+
+#english{
+    border-radius:  20px 0 0 20px;
+}
+#arabic{
+    border-radius:  0 20px 20px 0;
+    background-color: #222;
+}
+
+.crud{
+    width: 80%;
+    margin: auto;
+}
+
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+}
+
+
+
+.price input{
+    width: 20%;
+}
+
+#total {
+    background-color: #a90404;
+    padding: 5px 2px;
+    border-radius: 4px;
+
+}
+
+#total::before{
+    content: 'Total:';
+}
+
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #552a7f;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.4s ;
+}
+
+button:hover{
+    background-color: #7c3fb9;
+    letter-spacing: 1px;
+}
+
+#btn{
+    background:#552a7f;
+    padding : 10px;
+    width : 10px;
+    height: 10px;
+    position : absolute;
+    bottom : 10px;
+    right : 10px;
+    cursor: pointer;
+    display: none;
+    border-radius: 20px;
+}
+
+
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnsearch button{
+    width: 45%;
+}
+#deleteAil{
+    margin: 15px;
+}
+.outputs table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+table th  {
+    text-transform: uppercase ;
+}
+
+table th , td{
+    padding: 10px ;
+} 
